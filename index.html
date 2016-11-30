@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>PropertyGuru - Boost Countdown</title>
+
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-light.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--/CSS-->
+
+<!--JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+$(function () {
+	$('#defaultCountdown').countdown({until: new Date(2016, 11, 19)});
+	$('#defaultCountdown2').countdown({until: new Date(2016, 11, 19)});
+	$('#defaultCountdown3').countdown({until: new Date(2016, 11, 23)});
+	$('#defaultCountdown4').countdown({until: new Date(2017, 0, 19)});
+	//Replace above date with your own, to find out more visit http://keith-wood.name/countdown.html
+});
+</script>
+<!--/JS-->
+
+</head>
+
+<body>
+
+<!--DARK OVERLAY-->
+<div class="overlay"></div>
+<!--/DARK OVERLAY-->
+
+<!--WRAP-->
+<div id="wrap">
+	<!--CONTAINER-->
+	<div class="container">
+		<!-- <img src="images/paperplane.png" alt="Paper Plane" class="image-align" /> -->
+		<div class="boxy">
+			<h1>1. <span class="red">New Agentnet Header</span></h1>
+			<div id="defaultCountdown"></div>
+		</div>
+
+		<div class="boxy">
+			<h1>2. <span class="red">New Listing Management UI</span></h1>
+			<div id="defaultCountdown2"></div>
+		</div>
+
+		<div class="boxy">
+			<h1>3. <span class="red">UAT Briefing</span></h1>
+			<div id="defaultCountdown3"></div>
+		</div>
+
+		<div class="boxy">
+			<h1>4. <span class="red">Boost!!</span></h1>
+			<div id="defaultCountdown4"></div>
+		</div>
+	</div>
+	<!--/CONTAINER-->
+</div>
+<!--/WRAP-->
+
+</body>
+</html>
